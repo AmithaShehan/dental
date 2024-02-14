@@ -1,0 +1,58 @@
+
+
+.body{
+    background-color: green!important;
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav{
+    box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.75);
+
+}
+header{
+    height: 100vh;
+}
+
+.navbar-logo{
+    width: 50px;
+    height: 50px;
+}
+
+.w-auto{
+    width: auto!important;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.hero {
+    height: 100%;
+    position: relative;
+    padding-top: 60px;
+}
+
+@media (max-width: 991px) {
+    nav {
+      border-radius: 0!important; 
+    }
+  }
+
+/* -------------------hero section--------------------- */
+.hero--heading{
+    font-weight: 500;
+}
+
+.hero--image img{
+    /* background-image: url(./assets/images/hero-image.jpg); */
+    /* object-fit: cover; */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
