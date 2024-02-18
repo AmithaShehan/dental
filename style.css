@@ -8,6 +8,15 @@
 .complementry{
     color: var(--burnt-orange);
 }
+.box-shadow-1{
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.custom-border-1{
+    border-radius: 0 20px 0 20px;
+}
+.fs-7{
+    font-size: 1rem;
+}
 .body{
 
     min-height: 100vh;
