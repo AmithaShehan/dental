@@ -1,22 +1,30 @@
-
-
+:root{
+    --uranian-blue: #B7E3FBff;
+    --baby-powder: #FDFEFCff;
+    --picton-blue: #38B6FFff;
+    --burnt-orange: #FF8138;
+    --dark-blue: #000066;
+}
+.complementry{
+    color: var(--burnt-orange);
+}
 .body{
-    background-color: green!important;
+
     min-height: 100vh;
     width: 100%;
 }
 
 nav{
     box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.75);
-
+    background-color: var(--picton-blue)
 }
 header{
     height: 100vh;
 }
 
 .navbar-logo{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 
 .w-auto{
@@ -31,10 +39,52 @@ header{
     z-index: 10;
 }
 
+.navbar-nav a:hover, a:active, a:visited{
+    color: var(--dark-blue);
+}
+
+button {
+    color: #ffffff;
+    background-color: #000066;
+    font-size: 18px;
+    border: 1px solid #000066;
+    border-radius: 10px;
+    padding: 8px 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 500;
+}
+button:hover {
+    animation: 
+      colorChange 0.3s ease-in-out forwards,
+      backgroundChange 0.3s ease-in-out forwards;
+  }
+  
+  @keyframes colorChange {
+    from {
+      color: #ffffff;
+    }
+    to {
+      color: #000000;
+    }
+  }
+  
+  @keyframes backgroundChange {
+    from {
+      background-color: #000066;
+      border-color: #000066;
+    }
+    to {
+      background-color: var(--burnt-orange);
+      border-color: var(--burnt-orange);
+    }
+  }
+
 .hero {
     height: 100%;
     position: relative;
-    padding-top: 60px;
+    /* padding-top: 60px; */
+    background-color: black;
 }
 
 @media (max-width: 991px) {
@@ -44,15 +94,34 @@ header{
   }
 
 /* -------------------hero section--------------------- */
-.hero--heading{
-    font-weight: 500;
+
+/* -------------------home-about section--------------------- */
+.home--about{
+    background: #FF8138;
+    background-image: url(./assets/images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-.hero--image img{
-    /* background-image: url(./assets/images/hero-image.jpg); */
-    /* object-fit: cover; */
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.home--about .container-lg{
+    border: 1px solid transparent;
+    border-radius: 0 50px 0 50px;
+    box-shadow: 0 0 30px  rgba(0,0,0,0.75);
+    backdrop-filter: blur(0.5rem);
+}
 
+.home--about ul li {
+    list-style-type: none;
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .home--about ul li:hover {
+    transform: translateX(10px); 
+  }
+
+.home--about-img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 50px 0 50px;
 }
