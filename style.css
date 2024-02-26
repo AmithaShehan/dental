@@ -223,7 +223,7 @@ button:hover {
 
 
 /* -------------------About Page Styling--------------------- */
-.about-section img{
+.about-section img, .team img{
   width: 100%;
   object-fit: cover;
 }
