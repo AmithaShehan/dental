@@ -17,6 +17,9 @@ html {
 .custom-border-1 {
   border-radius: 0 20px 0 20px;
 }
+.custom-border-2 {
+  border-radius: 0 0px 0 20px;
+}
 .fs-7 {
   font-size: 1rem;
 }
@@ -145,6 +148,17 @@ button:hover {
   nav {
     border-radius: 0 !important;
   }
+  .custom-border-2{
+    border-radius: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mission {
+    border-left: 0.5px solid black;
+    border-right: 0.5px solid black;
+  }
+
 }
 
 .book-online {
@@ -223,7 +237,20 @@ button:hover {
 
 
 /* -------------------About Page Styling--------------------- */
-.about-section img, .team img{
+.about-section img{
   width: 100%;
   object-fit: cover;
 }
+.vmv{
+  background-color: var(--uranian-blue);
+}
+.vmv i{
+  font-size: 5rem;
+  color: var(--dark-blue);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+.team img{
+  width: 100%;
+  object-fit: cover;
+}
+
