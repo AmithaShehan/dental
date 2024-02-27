@@ -35,6 +35,9 @@ html {
 .bg-4 {
   background-color: #eee;
 }
+.theme-blue-bg{
+  background-color: var(--picton-blue);
+}
 .hover-1:hover {
   animation: hover-1 0.3s ease-in-out forwards;
 }
@@ -101,6 +104,9 @@ button {
 button:hover {
   animation: colorChange 0.3s ease-in-out forwards,
     backgroundChange 0.3s ease-in-out forwards;
+}
+.faq button:hover {
+  animation: none;
 }
 
 @keyframes colorChange {
@@ -277,4 +283,20 @@ button:hover {
 .team img {
   width: 100%;
   object-fit: cover;
+}
+
+/* FAQ */
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--picton-blue);
+}
+/* -------------------services page--------------------- */
+
+/* -------------------warranty section--------------------- */
+.warranty{
+  background-image: url(./assets/images/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color-burn;
+  background-color: rgba(0, 0, 0, 0.4);
 }
