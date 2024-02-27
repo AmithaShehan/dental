@@ -292,6 +292,11 @@ button:hover {
 }
 /* -------------------services page--------------------- */
 
+.services .text-overflow-y{
+  overflow-y: scroll;
+  height: 150px;
+}
+
 /* -------------------warranty section--------------------- */
 .warranty{
   background-image: url(./assets/images/hero-image.jpg);
@@ -299,4 +304,10 @@ button:hover {
   background-size: cover;
   background-blend-mode: color-burn;
   background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  overflow: hidden;
+}
+.warranty img{
+  max-height: 205px;
+  margin: 0 auto;
 }
