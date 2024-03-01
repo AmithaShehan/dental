@@ -414,3 +414,22 @@ button:hover {
   -webkit-box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
           box-shadow: 1px 1px 1px hsl(0, 50%, 2%, .5);
 }
+
+/*-------------------gallery section -----------------------*/
+.container-gallery{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* padding: 50px 8%; */
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-gap: 10px;
+}
+
+.gallery img{
+  width: 100%;
+  border-radius: 1rem;
+}
