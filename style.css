@@ -418,12 +418,17 @@ button:hover {
 /*-------------------gallery section -----------------------*/
 .container-gallery{
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   /* padding: 50px 8%; */
 }
 
 .gallery{
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   grid-gap: 10px;
