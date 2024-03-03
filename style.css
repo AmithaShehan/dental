@@ -35,6 +35,9 @@ html {
 .bg-4 {
   background-color: #eee;
 }
+.bg-5{
+  background-color: #eeeeee;
+}
 .theme-blue-bg{
   background-color: var(--picton-blue);
 }
@@ -134,13 +137,16 @@ button:hover {
   position: relative;
   padding-top: 60px;
   /* background-color: black; */
-  background-image: url(./assets/images/hero-1.jpg);
+  background-image: url(./assets/images/hero-image-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
   text-shadow: 0 0 2px rgba(255, 255, 255, 0.9);
 }
 
+/* .who-we-are img{
+  width: 100%;
+} */
 /* swiper */
 
 .swiper {
@@ -155,6 +161,8 @@ button:hover {
   width: 300px;
   height: 300px;
 }
+
+
 
 .swiper-slide img {
   display: block;
