@@ -662,12 +662,30 @@ button:hover {
   }
 }
 
-@keyframes boy2 {
+@keyframes boy1 {
   0% {
-    transform: translateY(0)
+    transform: rotateZ(0deg);
   }
   50% {
-    transform: translateY(10px)
+    transform: rotateZ(2deg);
+  }
+}
+
+@-webkit-keyframes boy2 {
+  0% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(5px);
+  }
+}
+
+@keyframes boy2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
   }
 }
 
