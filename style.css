@@ -658,22 +658,29 @@ button:hover {
     -webkit-transform: rotateZ(0deg);
   }
   50% {
-    -webkit-transform: rotateZ(10deg);
+    -webkit-transform: rotateZ(2deg);
   }
 }
 
-@keyframes boy1 {
+@keyframes boy2 {
   0% {
-    transform: rotateZ(0deg);
+    transform: translateY(0)
   }
   50% {
-    transform: rotateZ(10deg);
+    transform: translateY(10px)
   }
 }
 
-#boy-1, #boy-2 {
+#boy-1 {
   -webkit-animation: boy1 1s infinite linear;
   animation: boy1 1s infinite linear;
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+#boy-2 {
+  -webkit-animation: boy2 1s infinite linear;
+  animation: boy2 1s infinite linear;
   -webkit-transform-origin: bottom;
   transform-origin: bottom;
 }
