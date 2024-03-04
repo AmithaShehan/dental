@@ -478,7 +478,7 @@ button:hover {
 * Browsers: last 4 version
 */
 
-@-webkit-keyframes star {
+/* @-webkit-keyframes star {
   0% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
@@ -619,4 +619,99 @@ button:hover {
     background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
     background: -o-linear-gradient(top, white, black);
     background: linear-gradient(to bottom, white, black);
+} */
+
+@-webkit-keyframes star {
+  0% {
+    -webkit-transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateY(100px);
+  }
+}
+
+@keyframes star {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+}
+
+#star {
+  -webkit-animation: star 2s infinite linear;
+  animation: star 2s infinite linear;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+#star1 {
+  -webkit-animation: star 3s infinite linear;
+  animation: star 3s infinite linear;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+@-webkit-keyframes boy1 {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(10deg);
+  }
+}
+
+@keyframes boy1 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(10deg);
+  }
+}
+
+#boy-1, #boy-2 {
+  -webkit-animation: boy1 1s infinite linear;
+  animation: boy1 1s infinite linear;
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+@-webkit-keyframes ball {
+  0% {
+    -webkit-transform: translateY(0);
+    opacity: 100%;
+  }
+  100% {
+    -webkit-transform: translateY(-200px);
+    opacity: 0;
+  }
+}
+
+@keyframes ball {
+  0% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+}
+
+#ball-1 {
+  -webkit-animation: ball 3s infinite linear;
+  animation: ball 3s infinite linear;
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+}
+
+.example {
+  display: grid;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  user-select: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+  background: linear-gradient(to bottom, white, black);
 }
