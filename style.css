@@ -471,64 +471,152 @@ button:hover {
 
 
 /* svg animation */
-@keyframes star {
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@-webkit-keyframes star {
   0% {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
 
   }
   50% {
 
-    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+
+            transform: translateY(100px);
+
+  }
+}
+
+@keyframes star {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+
+  }
+  50% {
+
+    -webkit-transform: translateY(100px);
+
+            transform: translateY(100px);
 
   }
 }
 
 #star {
-  animation: star 2s infinite linear;
-  transform-origin: center;
+  -webkit-animation: star 2s infinite linear;
+          animation: star 2s infinite linear;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
   transform-box: fill-box;
 }
 
 #star1 {
-  animation: star 3s infinite linear;
-  transform-origin: center;
+  -webkit-animation: star 3s infinite linear;
+          animation: star 3s infinite linear;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
   transform-box: fill-box;
 }
 
-@keyframes boy1 {
+@-webkit-keyframes boy1 {
   0% {
-    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
 
   }
   50% {
 
-    transform: rotateZ(10deg);
+    -webkit-transform: rotateZ(10deg);
+
+            transform: rotateZ(10deg);
+
+  }
+}
+
+@keyframes boy1 {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+
+  }
+  50% {
+
+    -webkit-transform: rotateZ(10deg);
+
+            transform: rotateZ(10deg);
 
   }
 }
 
 #boy-1, #boy-2 {
-  animation: boy1 1s infinite linear;
-  transform-origin: bottom;
+  -webkit-animation: boy1 1s infinite linear;
+          animation: boy1 1s infinite linear;
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
   transform-box: fill-box;
 }
 
-@keyframes ball {
+@-webkit-keyframes ball {
   0% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 100%;
 
   }
   100% {
 
-    transform: translateY(-200px);
+    -webkit-transform: translateY(-200px);
+
+            transform: translateY(-200px);
+    opacity: 0;
+
+  }
+}
+
+@keyframes ball {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 100%;
+
+  }
+  100% {
+
+    -webkit-transform: translateY(-200px);
+
+            transform: translateY(-200px);
     opacity: 0;
 
   }
 }
 
 #ball-1 {
-  animation: ball 3s infinite linear;
-  transform-origin: bottom;
+  -webkit-animation: ball 3s infinite linear;
+          animation: ball 3s infinite linear;
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
   transform-box: fill-box;
+}.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
 }
