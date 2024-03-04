@@ -468,3 +468,67 @@ button:hover {
 }
 
 /*-------------------contact page -----------------------*/
+
+
+/* svg animation */
+@keyframes star {
+  0% {
+    transform: translateX(0px);
+
+  }
+  50% {
+
+    transform: translateY(100px);
+
+  }
+}
+
+#star {
+  animation: star 2s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#star1 {
+  animation: star 3s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes boy1 {
+  0% {
+    transform: rotateZ(0deg);
+
+  }
+  50% {
+
+    transform: rotateZ(10deg);
+
+  }
+}
+
+#boy-1, #boy-2 {
+  animation: boy1 1s infinite linear;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+
+@keyframes ball {
+  0% {
+    transform: translateY(0);
+    opacity: 100%;
+
+  }
+  100% {
+
+    transform: translateY(-200px);
+    opacity: 0;
+
+  }
+}
+
+#ball-1 {
+  animation: ball 3s infinite linear;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
